@@ -22,7 +22,6 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Card className="group border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-glow-primary/20 transition-all duration-300 hover:scale-105 overflow-hidden">
-      {/* Project Image/Preview */}
       <div className="relative h-48 bg-tech-gradient-subtle overflow-hidden">
         {image ? (
           <img 
@@ -49,7 +48,6 @@ export const ProjectCard = ({
           {description}
         </p>
 
-        {/* Technologies */}
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
             <Badge 
@@ -62,7 +60,6 @@ export const ProjectCard = ({
           ))}
         </div>
 
-        {/* Action Buttons */}
         <div className="flex gap-3 pt-2">
           {githubUrl && (
             <Button 

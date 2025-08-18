@@ -28,7 +28,6 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     setTimeout(() => {
       toast({
         title: "Message Sent!",
@@ -74,7 +73,6 @@ export const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <Card className="border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in-up">
             <CardHeader>
               <h3 className="text-2xl font-semibold text-primary">Send me a message</h3>
